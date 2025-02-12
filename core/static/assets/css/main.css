@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Top Bar Styling */
+.top-bar {
+    background: #f5f5f5; /* Light grey background */
+    padding: 10px 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between; /* Puts one on the left and one on the right */
+    align-items: center;
+    color: #333; /* Dark grey text */
+    font-family: Arial, sans-serif;
+}
+.right-content {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing */
+}
+.header-right a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    position: relative;
+}
+
+/* Small badge for cart & wishlist notification */
+.header-right a .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #5cb69f; /* Greenish color */
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.header-right a i {
+    margin-right: 8px;
+    font-size: 20px; /* Adjust icon size */
+}
+
+/* Removes default link styling */
+.top-bar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+}
+
+.top-bar a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: white; /* Set background */
+    border-bottom: 1px solid #ddd; /* Light border for separation */
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px; /* Adjust size */
+}
+.companyname h1{
+    height: 20px;
+    font-size: 40px;
+}
+.companyname h2{
+    height:20px;
+    font-size: 20px;
+}
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    border: px solid #ddd;
+    border-radius: none;
+    padding: 5px 10x;
+    background: #f5f5f5;
+    
+}
+.search-bar select{
+    font-size: 20px;
+    padding:5px
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 350%;
+    padding: 15px;
+    background: transparent;
+}
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    
+ 
+}
+
+.header-right a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    display: flex;
+    align-items: left;
+}
+
+.header-right a {
+    padding: 20px;
+    
+}
+
+
+.main-section {
+    display: flex;
+    margin: 20px;
+}
+
+.categories {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.banner {
+    background: #e2f3e5;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.banner h2 {
+    font-size: 36px;
+}
+
+.banner input {
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.banner button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

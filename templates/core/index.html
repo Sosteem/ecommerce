@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handicraft Store</title>
+    <link rel="stylesheet" href="static/assets/css/main.css">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="left-content">
+            <a href="#">About Us</a> |
+            <a href="#">My Account</a> |
+            <a href="#">Wishlist</a> |
+            <a href="#">Order Tracking</a>
+        </div>
+        <div class="right-content">
+            <span>Need help? Call Us: <a href="tel:977-9763379163">977-9763379163</a></span> |
+            <a href="#">English</a> |
+            <a href="#">NPR</a>
+        </div>
+    </header>
+    
+
+    <!-- Main Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="{% static 'images/logo.png' %}" alt="Logo">
+                <div class="companyname">
+                <h1>Swastika </h1>
+                <h2>Handicraft and Plastic Udhyog</h2>
+            </div>
+            <div class="search-bar">
+                <select>
+                    <option>All Categories</option>
+                </select>
+                <input type="text" placeholder="Search for items...">
+                <button>🔍</button>
+            </div>
+            <div class="header-right">
+                <a href="#"> <i class="fa-solid fa-location-dot"></i>
+                    <select>
+                        <option>Your Location</option>
+                    </select>
+                   
+                <a href="#"><i class="fa-regular fa-heart"></i>Wishlist</a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+                <a href="#"><i class="fa-regular fa-user"></i>Account</a>
+            </div>
+            </div>
+           
+        </div>
+    </nav>
+
+    <!-- Categories & Banner -->
+    <section class="main-section">
+        <aside class="categories">
+            <h3>Category</h3>
+            <ul>
+                <li>Token of love</li>
+                <li>Stamp</li>
+                <li>photo frames</li>
+                <li>Aakhijhyal</li>
+                <li>base</li>
+                <li>Decoration items</li>
+            </ul>
+        </aside>
+        <div class="banner">
+            <h2> <br> Big Discount</h2>
+            <p>Save up to 50% on your first order</p>
+            <input type="email" placeholder="Your email address">
+            <button>Subscribe</button>
+        </div>
+    </section>
+
+</body>
+</html>

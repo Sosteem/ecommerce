@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f8f8f8;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            padding: 20px;
+        }
+        .filter-section {
+            width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .filter-section h3, .filter-section h4 {
+            margin-bottom: 10px;
+        }
+        .filter-section label {
+            display: block;
+            margin: 5px 0;
+        }
+        .filter-btn {
+            background: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .products-section {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .categories {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .categories span {
+            background: lightgray;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .discount {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: red;
+            color: white;
+            padding: 5px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="filter-section">
+            <h3>Filter by price</h3>
+            <label>From: <span>$500</span></label>
+            <label>To: <span>$1,000</span></label>
+            <h4>Color</h4>
+            <label><input type="checkbox"> Red (56)</label>
+            <label><input type="checkbox"> Green (78)</label>
+            <label><input type="checkbox"> Blue (54)</label>
+            <h4>Item Condition</h4>
+            <label><input type="checkbox"> New (1506)</label>
+            <label><input type="checkbox"> Refurbished (27)</label>
+            <label><input type="checkbox"> Used (45)</label>
+            <button class="filter-btn">Filter</button>
+        </aside>
+        <main class="products-section">
+            <h2>Popular Products</h2>
+            <div class="categories">
+                <span>All</span>
+                <span>Milks & Dairies</span>
+                <span>Coffees & Teas</span>
+                <span>Pet Foods</span>
+                <span>Meats</span>
+                <span>Vegetables</span>
+                <span>Fruits</span>
+            </div>
+            <div class="products-grid">
+                <div class="product">
+                    <span class="discount">-44%</span>
+                    <img src="red_velvet_cake.jpg" alt="Red Velvet Cake">
+                    <p>Red Velvet Cake</p>
+                </div>
+                <div class="product">
+                    <span class="discount">-52%</span>
+                    <img src="bbq_chicken.jpg" alt="BBQ Chicken">
+                    <p>Spatchcock BBQ Chicken</p>
+                </div>
+                <div class="product">
+                    <span class="discount">-22%</span>
+                    <img src="grilled_chicken.jpg" alt="Grilled Chicken">
+                    <p>Home-Made BBQ Grilled Chicken</p>
+                </div>
+                <div class="product">
+                    <span class="discount">-9%</span>
+                    <img src="burger.jpg" alt="Burger">
+                    <p>Double Beef Fried Chicken Bacon</p>
+                </div>
+                <div class="product">
+                    <span class="discount">-21%</span>
+                    <img src="vanilla_cake.jpg" alt="Vanilla Cake">
+                    <p>Vanilla Cake</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
