@@ -1,4 +1,10 @@
 /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +14,9 @@ body {
 
 /* Top Bar Styling */
 .top-bar {
-    background: #f5f5f5; /* Light grey background */
+    background: #f5f5f5;
+    margin-right: 20px; /* Light grey background */
+    margin-left:20px;
     padding: 10px 20px;
     font-size: 14px;
     display: flex;
@@ -18,9 +26,11 @@ body {
     font-family: Arial, sans-serif;
 }
 .right-content {
+    padding-left: 30px;
     display: flex;
     align-items: center;
-    gap: 10px; /* Adjust spacing */
+    gap: 10px; 
+    /* Adjust spacing */
 }
 .header-right a {
     display: flex;
@@ -30,7 +40,18 @@ body {
     font-size: 16px;
     position: relative;
 }
+.container{
+    margin-left: 20px;
+}
 
+.search-bar{
+    margin-left: 130px;
+}
+
+.header-right{
+    margin-left: 120px;
+    padding-left: 20px;
+}
 /* Small badge for cart & wishlist notification */
 .header-right a .badge {
     position: absolute;
@@ -73,6 +94,91 @@ body {
     background: white; /* Set background */
     border-bottom: 1px solid #ddd; /* Light border for separation */
     
+}
+.navbars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.category-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.category-btn:hover {
+    background-color: #45a049;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+.logo {
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    gap: 15px; /* Creates space between the logo and text */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+.nav-right {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+.nav-right .fa-headset{
+    font-size: 25px; /* Adjust size */
+}
+.nav-right i{
+    margin-right: 10px;
+}
+
+
+.support-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.support-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.support-number {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+small {
+    font-size: 12px;
+    color: gray;
 }
 
 .logo {
